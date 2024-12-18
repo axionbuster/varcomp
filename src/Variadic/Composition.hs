@@ -1,6 +1,8 @@
 -- | Variadic composition
 module Variadic.Composition (Compose (..)) where
 
+infixr 9 .**.
+
 -- | Variadic composition
 class Compose a b c d e where
   -- | Compose two functions
