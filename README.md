@@ -30,9 +30,9 @@ h2 = g .**. f2
 
 -- Three arguments
 
-f3 :: Int -> Double -> String
+f3 :: Int -> Double -> String -> Char
 f3 = undefined
 
-h3 :: Int -> Double -> Char
+h3 :: Int -> Double -> String -> Char
 h3 = g .**. f3
 ```
