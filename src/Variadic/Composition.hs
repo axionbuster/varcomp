@@ -1,5 +1,9 @@
 -- | Variadic composition
-module Variadic.Composition (Compose (..)) where
+module Variadic.Composition
+  ( Compose,
+    (.**.),
+  )
+where
 
 infixr 9 .**.
 
@@ -12,6 +16,9 @@ instance Compose a b c a b where
   (.**.) = (.)
   {-# INLINE (.**.) #-}
 
-instance (Compose a b f d e) => Compose a b c (f -> d) (f -> e) where
+instance
+  (Compose a b f d e) =>
+  Compose a b c (f -> d) (f -> e)
+  where
   f .**. g = (.**.) f . g
   {-# INLINE (.**.) #-}
