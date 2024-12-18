@@ -13,6 +13,9 @@ addOne = (+ 1)
 add :: Int -> Int -> Int
 add x y = x + y
 
+swish3 :: Int -> Int -> Int -> Int
+swish3 x y z = x * y * z
+
 compose0 :: Int -> String
 compose0 = toString .**. addOne
 
@@ -27,3 +30,9 @@ main = hspec $ do
 
     it "works with two argument functions" $ do
       compose1 1 2 `shouldBe` "3"
+
+    it "works inline" $ do
+      (toString .**. add) (1 :: Int) (2 :: Int) `shouldBe` "3"
+
+    it "works with three argument functions" $ do
+      (toString .**. swish3) (1 :: Int) (2 :: Int) (3 :: Int) `shouldBe` "6"
