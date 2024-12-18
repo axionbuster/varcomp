@@ -5,7 +5,7 @@ Variadic function composition done via the `.**.` operator.
 ## Usage
 
 ```haskell
-import Variadic.Composition (Compose ((.**.)))
+import Variadic.Composition ((.**.))
 
 -- Simple composition
 
