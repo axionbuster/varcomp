@@ -47,4 +47,4 @@ test-suite varcomp-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/varcomp
+  location: https://github.com/axionbuster/varcomp
