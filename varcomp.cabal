@@ -13,7 +13,7 @@ copyright:           2024 "buster"
 category:            Data
 build-type:          Simple
 extra-source-files:  README.md
-                     CHANGELOG.md
+extra-doc-files:     CHANGELOG.md
 
 library
   hs-source-dirs:      src
