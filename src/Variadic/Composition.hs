@@ -11,5 +11,5 @@ instance Compose a b c a b where
   {-# INLINE (.**.) #-}
 
 instance (Compose a b f d e) => Compose a b c (f -> d) (f -> e) where
-  f .**. g = \x -> f .**. g x
+  f .**. g = (.**.) f . g
   {-# INLINE (.**.) #-}
