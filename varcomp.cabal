@@ -20,7 +20,8 @@ library
   exposed-modules:     Variadic.Composition
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
-  default-extensions:  MultiParamTypeClasses, FlexibleInstances
+  default-extensions:  MultiParamTypeClasses, FlexibleInstances,
+                       FlexibleContexts
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
