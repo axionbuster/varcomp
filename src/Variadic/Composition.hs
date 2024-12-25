@@ -20,5 +20,5 @@ instance
   (Compose (a -> b) (f -> d) (f -> e)) =>
   Compose (a -> b) (f -> f -> d) (f -> f -> e)
   where
-  f .**. g = (.**.) f . g
+  (.**.) f g = (.**.) f . g
   {-# INLINE (.**.) #-}
