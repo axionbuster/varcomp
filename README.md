@@ -33,6 +33,6 @@ h2 = g .**. f2
 f3 :: Int -> Double -> String -> Char
 f3 = undefined
 
-h3 :: Int -> Double -> String -> Char
+h3 :: Int -> Double -> String -> String
 h3 = g .**. f3
 ```
